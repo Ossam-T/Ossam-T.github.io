@@ -1,0 +1,217 @@
+html<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【髙野　統】 | デジタル名刺</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #212529;
+            --text-sub: #6c757d;
+            --primary: #1f3c6d;
+            --accent: #0077b5;
+            --border-color: #e9ecef;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 480px;
+            padding: 40px 30px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .profile-section h1 {
+            font-size: 1.8rem;
+            margin: 10px 0 5px 0;
+            color: var(--primary);
+        }
+
+        .profile-section .title {
+            font-size: 0.95rem;
+            color: var(--text-sub);
+            margin-bottom: 25px;
+            letter-spacing: 0.05em;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 25px 0;
+        }
+
+        .section-title {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-align: left;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* 各バッジのスタイル */
+        .badge-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .badge-item {
+            background-color: #f1f5f9;
+            border-left: 4px solid var(--primary);
+            padding: 12px 15px;
+            border-radius: 4px 8px 8px 4px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .badge-info {
+            flex-grow: 1;
+            padding-right: 10px;
+        }
+
+        .badge-name {
+            font-weight: bold;
+            font-size: 0.95rem;
+            color: var(--primary);
+            display: block;
+        }
+
+        .badge-desc {
+            font-size: 0.8rem;
+            color: var(--text-sub);
+            display: block;
+        }
+
+        /* 小さな検証ボタン */
+        .btn-sm-verify {
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 6px;
+            white-space: nowrap;
+            transition: background-color 0.2s;
+        }
+
+        .btn-sm-verify:hover {
+            background-color: #152a4e;
+        }
+
+        /* 外部リンクボタン */
+        .btn-linkedin {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            width: 100%;
+            box-sizing: border-box;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+        }
+
+        .btn-linkedin:hover {
+            background-color: #f0f7fa;
+            transform: translateY(-1px);
+        }
+
+        .footer {
+            font-size: 0.75rem;
+            color: var(--text-sub);
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="profile-section">
+            <h1>【髙野　統】</h1>
+            <div class="title">【株式会社小松製作所・情報戦略本部】</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section-title">Digital Badges / デジタル認証</div>
+        <div class="badge-list">
+            
+            <!-- バッジ1：DX推進パスポート -->
+            <div class="badge-item">
+                <div class="badge-info">
+                    <span class="badge-name">DX推進パスポート</span>
+                    <span class="badge-desc">Di-Lite デジタルリテラシー協議会</span>
+                </div>
+                <a href="https://www.openbadge-global.com/ns/portal/openbadge/public/assertions/detail/dFhBTEFlMDUycm9Fb21DNlg1VGwxZz0" target="_blank" rel="noopener" class="btn-sm-verify">🛡️ 検証</a>
+            </div>
+
+            <!-- バッジ2：ITパスポート -->
+            <div class="badge-item">
+                <div class="badge-info">
+                    <span class="badge-name">ITパスポート</span>
+                    <span class="badge-desc">国家試験 / IPA</span>
+                </div>
+                <a href="https://www.openbadge-global.com/ns/portal/openbadge/public/assertions/detail/dFhBTEFlMDUycm9Fb21DNlg1VGwxZz09" target="_blank" rel="noopener" class="btn-sm-verify">🛡️ 検証</a>
+            </div>
+
+            <!-- バッジ3：G検定 -->
+            <div class="badge-item">
+                <div class="badge-info">
+                    <span class="badge-name">G検定 (Generalist)</span>
+                    <span class="badge-desc">ディープラーニング / JDLA</span>
+                </div>
+                <a href="https://www.openbadge-global.com/ns/portal/openbadge/public/assertions/detail/Sk11MThzcW53c2NBdWFIK2NOT3ZyQT09" target="_blank" rel="noopener" class="btn-sm-verify">🛡️ 検証</a>
+            </div>
+
+            <!-- バッジ4：IT×G（など残りのバッジ） -->
+            <div class="badge-item">
+                <div class="badge-info">
+                    <span class="badge-name">IT ＆ G バッジ</span>
+                    <span class="badge-desc">DX推进パスポート 構成バッジ</span>
+                </div>
+                <a href="https://www.openbadge-global.com/ns/portal/openbadge/public/assertions/detail/eGlmSmxtQ0V5MUF4cGVaVjRjaEo4Zz09" target="_blank" rel="noopener" class="btn-sm-verify">🛡️ 検証</a>
+            </div>
+
+        </div>
+
+        <div class="section-title">Links</div>
+        <a href="【LinkedInのURL】" target="_blank" rel="noopener" class="btn-linkedin">
+            💼 LinkedIn プロフィール
+        </a>
+
+        <div class="footer">
+            © 2026 Verified Portfolio. Powered by GitHub Pages.
+        </div>
+    </div>
+
+</body>
+</html>
